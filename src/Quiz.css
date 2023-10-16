@@ -1,0 +1,211 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* === QUIZ SECTION === */
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: relative;
+  }
+
+.quiz-form {
+    color:#d1cfcf;
+    text-align: start;
+    padding: 0 2em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin: 4em auto 4em auto;
+}
+
+.quiz-form h2 {
+    text-align: start;
+    font-size: 1.7rem;
+}
+
+/* questions */
+
+.question {
+    margin-top: 1.5em;
+}
+
+.question .radio-btns {
+    margin: 0.8em 0;
+}
+
+
+/* === VECTORS === */
+.vec {
+    transform: scaleX(1.1);
+    margin-left: 1em;
+    margin-top: 0.5em;
+}
+  
+.vec-1 path, 
+.vec-3 path {
+    fill: #DEEFFF;
+}
+
+.b-vec-1,
+.b-vec-2 {
+    position: absolute;
+    transform: scale(1.1);
+}
+
+.b-vec-1 {
+    top: 0;
+    right: -4em;
+}
+
+
+.b-vec-2 {
+    bottom: -3em;
+    left: 0;
+}
+
+/* === radio styles === */
+
+  /* inputs container */
+.radio-btns {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 0.8em;
+}
+
+.label-box {
+    padding: 6px 18px;
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1rem;
+}
+  
+/* Hide the actual radio button input */
+input[type="radio"] {
+    display: none;
+}
+  
+/* Style the label-box when the radio button is checked */
+input[type="radio"]:checked + .label-box {
+    background-color: #5a5a5ed9;
+    color: #fff;
+    border: 1px solid #5a5a5ed9;
+}
+
+/* radio correction classes */
+.correct {
+    background-color: #54a149;
+}
+
+.incorrect {
+    background-color: #e18f8f;
+}
+
+/* submit button */
+
+.lower {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.submit-btn,
+.refresh-btn {
+    font-size: 1.4rem;
+    background: #363434;
+    width: 150px;
+}
+
+.quiz-score {
+    font-size: 1.5rem;
+}
+
+/* === MEDIA QUERIES === */
+
+@media (min-width: 606px) {
+    .quiz-form {
+        padding: 0 2.5em;
+    }
+
+    .vec {
+        transform: scaleX(1.3);
+        margin-left: 4em;
+    }
+}
+
+@media (min-width: 720px) {
+    .vec {
+        transform: scaleX(1.4);
+        margin-left: 5em;
+    }
+}
+
+@media (min-width: 800px) {
+    .quiz-form {
+        padding: 0 7em;
+    }
+    
+    .vec {
+        transform: scaleX(1.5);
+        margin-left: 6em;
+    }
+}
+
+@media (min-width: 1000px) {
+    .quiz-form {
+        padding: 0 12em;
+    }
+
+    .quiz-form h2 {
+        font-size: 1.8rem;
+    }
+
+    .vec {
+        transform: scaleX(1.7);
+        margin-left: 8.5em;
+    }
+}
+
+@media (min-width: 1260px) {
+    .quiz-form {
+        padding: 0 14em;
+    }
+
+    .quiz-form h2 {
+        font-size: 1.9rem;
+    }
+
+    .vec {
+        transform: scaleX(2.1);
+        margin-left: 13em;
+    }
+}
+
+@media (min-width: 1500px) {
+    .quiz-form {
+        padding: 0 17em;
+    }
+
+    .vec {
+        transform: scaleX(2.3);
+        margin-left: 16em;
+    }
+}

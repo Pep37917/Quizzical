@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700;800&family=League+Spartan:wght@400;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+ ========
+ START PAGE COMPONENTS
+ ========
+*/
+
+
+/*== graphics ==*/
+
+.mid {
+    position: relative;
+    padding: 2.5em;
+    text-align: center; 
+}
+
+
+.s-vec-3,
+.s-vec-4 {
+    position: absolute;
+    z-index: -1;
+    transform: scale(2);
+}
+
+
+.s-vec-3 {
+    top: 0;
+    right: 0;
+}
+
+.s-vec-4 {
+    bottom: 0;
+    left: 0;
+}
+
+/*== text and btn ==*/
+
+.title {
+    font-size: 3.3rem;
+    text-shadow: 0.5px 0.5px 25px #969696;
+}
+
+.title .logo-q {
+    font-family: 'League Spartan', sans-serif;
+    color: #efd5a8;
+    font-size: 4.4rem;
+}
+
+.start-desc {
+    color: #DEEBF8;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: -1em;
+}
+
+.start-btn {
+    width: 10em;
+    font-size: 1.1em;
+    background: #3d3737;
+    margin-top: 1em;
+    transition: all 0.5s ease-in-out;
+}
+
+.start-btn:hover,
+.start-btn:focus {
+    background:#efd5a8;
+}
+
+/* @media (min-width: 1000px) {
+    .mid {
+        font-size: 1.5rem;
+        padding: 1em;
+    }
+} */
