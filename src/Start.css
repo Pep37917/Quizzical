@@ -28,7 +28,7 @@
 .s-vec-4 {
     position: absolute;
     z-index: -1;
-    transform: scale(2);
+    transform: scale(1.5);
 }
 
 
@@ -73,6 +73,15 @@
 .start-btn:hover,
 .start-btn:focus {
     background:#efd5a8;
+}
+
+@media (max-width: 500px) {
+    .s-vec-3,
+    .s-vec-4 {
+    position: absolute;
+    z-index: -1;
+    transform: scale(1);
+}
 }
 
 /* @media (min-width: 1000px) {

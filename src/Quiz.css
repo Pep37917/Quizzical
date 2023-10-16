@@ -140,6 +140,19 @@ input[type="radio"]:checked + .label-box {
 
 /* === MEDIA QUERIES === */
 
+@media (max-width: 500px) {
+    .b-vec-2 {
+    transform: scale(0.8);
+    }
+    .b-vec-1 {
+    transform: scale(1.1);     
+    }
+
+    .quiz-form h2 {
+        font-size: 1.5rem;
+    }
+}
+
 @media (min-width: 606px) {
     .quiz-form {
         padding: 0 2.5em;

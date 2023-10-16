@@ -159,7 +159,7 @@ export default function Quiz(props) {
         </svg>
         <form className="quiz-form" onSubmit={getAns}>
           {questionElements}
-          <div class="lower">
+          <div className="lower">
             {!quizSubmitted 
               ?
               <button className="submit-btn" type="submit">submit</button>
