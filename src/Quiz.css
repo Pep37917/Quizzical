@@ -147,21 +147,28 @@ input[type="radio"]:checked + .label-box {
         left: -5em;
     }
     .b-vec-1 {
-        transform: scale(0.8);
-        right: -6em;
+        transform: scale(0.9);
+        right: -1.5em;
     }
 
     .quiz-form {
-        padding: 1.5em;
+        padding: 1em;
     }
 
     .quiz-form h2 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
+    .radio-btns {
+        font-size: 0.8rem;
+    }
+
+    .label-box {
+        margin-top: 2em;
+    }
     .vec {
-        transform: scaleX(0.9);
-        margin-left: -1em;
+        transform: scaleX(0.85);
+        margin-left: -1.8em;
         margin-top: 0.5em;
     }
 }
