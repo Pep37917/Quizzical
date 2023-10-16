@@ -152,7 +152,7 @@ input[type="radio"]:checked + .label-box {
     }
 
     .quiz-form {
-        padding: 1em;
+        padding: 1.5em;
     }
 
     .quiz-form h2 {
